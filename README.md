@@ -1,0 +1,1 @@
+# 2_nft_preview_card_component
