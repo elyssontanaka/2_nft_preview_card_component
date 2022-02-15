@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600&display=swap');
 
 * {
     margin: 0;
@@ -19,13 +19,111 @@ body {
     font-size: 18px;
     font-family: 'Outfit', sans-serif;
     background: var(--secondary-main-bg);
+    position: relative;
+    height: 100vh;
+}
+
+.card-container {
+    background: var(--secondary-card-bg);
+    width: 348px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 15px;
+    box-shadow: 0 15px 15px 15px hsl(213, 57%, 9%), 0 20px 20px 30px hsl(216, 51%, 10%);
+}
+
+.image-container img {
+    width: calc(100% - 48px);
+    height: auto;
+    margin: 24px 24px 0 24px;
+    border-radius: 10px;
+}
+
+.info-container {
+    padding: 0 24px;
+}
+
+.info-container h1 {
+    color: var(--secondary-white);
+    font-size: 22px;
+    font-weight: 500;
+    padding: 18px 0;
+}
+
+.description-container {
+    color: var(--primary-soft-blue);
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.other-info {
+    border-bottom: var(--secondary-line) 1px solid;
+}
+
+.ethereum, .clock {
+    display: inline-block;
+}
+
+.ethereum p, .clock p {
+    display: inline-block;
+    position: relative;
+    left: 3px;
+    bottom: 2px;
+    padding: 25px 0 20px 0;
+}
+
+.ethereum p {
+    color: var(--primary-cyan);
+    font-size: 16px;
+}
+
+.clock {
+    float: right;
+    color: var(--primary-soft-blue);
+    font-size: 16px;
+}
+
+.creator-space {
+    display: flex;
+    padding: 18px 25px 25px 25px;
+    margin-top: var(--secondary-white) 1px solid;
+    align-items: center;
+}
+
+.creator-avatar img {
+    width: 33px;
+    border: var(--secondary-white) 1px solid;
+    border-radius: 50%;
+}
+
+.creator-name {
+    display: inline-block;
+    position: relative;
+    left: 15px;
+    bottom: 3px;
+    font-weight: 300;
+}
+
+.creator-name p {
+    font-size: 16px;
+    color: var(--primary-soft-blue);
+}
+
+.creator-name a {
+    text-decoration: none;
+    color: var(--secondary-white);
 }
 
 .attribution {
+    position: relative;
+    top: 97%;
     font-size: 11px;
     text-align: center;
+    color: var(--secondary-white);
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: hsl(228, 20%, 60%);
 }
