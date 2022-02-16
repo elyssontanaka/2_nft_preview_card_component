@@ -41,6 +41,7 @@ body {
     height: 300px;
     border-radius: 10px;
     position: relative;
+    cursor: pointer;
 }
 
 .image-container::after {
@@ -49,7 +50,7 @@ body {
     position: absolute;
     background: rgba(0, 255, 247, 0.5);
     width: 300px;
-    height: 300px;   
+    height: 300px;
     visibility: hidden;
     border-radius: 10px;
 }
@@ -81,6 +82,8 @@ body {
     font-size: 22px;
     font-weight: 500;
     padding: 18px 0;
+    display: inline-block;
+    cursor: pointer;
 }
 
 .info-container h1:hover {
@@ -165,4 +168,35 @@ body {
 
 .attribution a {
     color: hsl(228, 20%, 60%);
+}
+
+@media (max-width: 460px) {
+    .card-container {
+        width: 325px;
+    }
+
+    .image-container {
+        height: 277px;
+    }
+
+    .image-container::after {
+        width: 277px;
+        height: 277px;
+    }
+
+    .info-container h1 {
+        padding: 24px 0 14px 0;
+    }
+
+    .description-container {
+        font-size: 16px;
+    }
+
+    .ethereum p, .clock p {
+        padding: 20px 0 15px 0;
+    }
+
+    .creator-space {
+        padding: 16px 25px 20px 25px;
+    }
 }
