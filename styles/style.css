@@ -34,11 +34,42 @@ body {
     box-shadow: 0 15px 15px 15px hsl(213, 57%, 9%), 0 20px 20px 30px hsl(216, 51%, 10%);
 }
 
-.image-container img {
-    width: calc(100% - 48px);
-    height: auto;
+.image-container {
     margin: 24px 24px 0 24px;
+    background: url("/images/image-equilibrium.jpg");
+    background-size: cover;
+    height: 300px;
     border-radius: 10px;
+    position: relative;
+}
+
+.image-container::after {
+    content: '';
+    /* it only shows with position absolute */
+    position: absolute;
+    background: rgba(0, 255, 247, 0.5);
+    width: 300px;
+    height: 300px;   
+    visibility: hidden;
+    border-radius: 10px;
+}
+
+.image-container:hover::after {
+    visibility: visible;
+}
+
+.image-container:hover .eye-icon {
+    visibility: visible;
+    z-index: 1000;
+}
+
+.image-container img {
+    width: 47px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
 }
 
 .info-container {
@@ -50,6 +81,10 @@ body {
     font-size: 22px;
     font-weight: 500;
     padding: 18px 0;
+}
+
+.info-container h1:hover {
+    color: var(--primary-cyan);
 }
 
 .description-container {
@@ -114,6 +149,10 @@ body {
 .creator-name a {
     text-decoration: none;
     color: var(--secondary-white);
+}
+
+.creator-name a:hover {
+    color: var(--primary-cyan);
 }
 
 .attribution {
