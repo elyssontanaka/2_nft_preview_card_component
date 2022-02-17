@@ -64,7 +64,7 @@ body {
     z-index: 1000;
 }
 
-.image-container img {
+.eye-icon {
     width: 47px;
     position: absolute;
     left: 50%;
