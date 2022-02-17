@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL her](https://your-solution-url.com) add the solution from FEM
+- Solution URL: [Add solution URL her](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U/hub/nft-preview-card-component-using-flexbox-_qgWBaA-6)
 - Live Site URL: [NFT Preview Card Component](https://elyssontanaka.github.io/2_nft_preview_card_component/)
 
 
