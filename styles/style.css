@@ -36,7 +36,7 @@ body {
 
 .image-container {
     margin: 24px 24px 0 24px;
-    background: url("/images/image-equilibrium.jpg");
+    background: url("./images/image-equilibrium.jpg");
     background-size: cover;
     height: 300px;
     border-radius: 10px;
